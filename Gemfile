@@ -7,9 +7,11 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'haml-rails'
+gem 'faraday'
 gem 'reverb'
 
 group :development, :test do
+  gem 'dotenv-rails'
   gem 'byebug'
   gem 'spring'
 end
