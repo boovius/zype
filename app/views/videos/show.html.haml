@@ -1,4 +1,16 @@
 .container
   .player(id="zype_#{@zype_id}")
-    %script(src="https://player.zype.com/embed/#{@zype_id}.js?autoplay=true&app_key=#{ENV['ZYPE_API_KEY']}")
+    -if @sub_req && !@access_token
+      %script(src="https://player.zype.com/embed/#{@zype_id}.js?&access_token=#{@acces_token}")
+      .firewall-overlay
+        .firewall-controls
+          %h2 We are sorry but you must log in to view this video
+          %a
+            log in
+          %a
+            subscribe
+    -elsif @sub_req && @access_token
+      %script(src="https://player.zype.com/embed/#{@zype_id}.js?&access_token=#{@acces_token}")
+    -else
+      %script(src="https://player.zype.com/embed/#{@zype_id}.js?autoplay=true&app_key=#{ENV['ZYPE_API_KEY']}")
 
