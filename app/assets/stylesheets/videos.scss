@@ -1,0 +1,50 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.videos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  .video {
+    min-width: 200px;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 20px;
+    transition: all .2s ease-in-out;
+    position: relative;
+    text-align: center;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+  }
+
+  .caption-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    color: white;
+
+    .video-description {
+      margin-top: 1.5em;
+    }
+  }
+
+  .video:hover {
+    transform: scale3d(1.2, 1.2, 1);
+  }
+
+  .video:hover .caption-overlay {
+    display: block;
+  }
+}
