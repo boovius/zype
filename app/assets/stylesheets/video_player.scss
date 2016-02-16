@@ -13,7 +13,6 @@ $green-juice: #00b300;
     text-align: center;
 
     .firewall-controls {
-      font-size: 1.6em;
       width: 50%;
       margin: auto;
       margin-top: 18%;
@@ -21,11 +20,27 @@ $green-juice: #00b300;
       background-color: $green-juice;
       border-radius: 7px;
 
-      h4 {
+      h2 {
         background-color: white;
         color: $green-juice;
-        padding: 10px 0;
+        padding: .75em 0;
         font-weight: normal;
+      }
+
+      a {
+        display: inline-block;
+        margin: 2em 1.2em 0;
+        padding: 1em;
+        border-radius: .2em;
+        background-color: #fff;
+        color: $green-juice;
+        font-size: 1.2em;
+        cursor: pointer;
+      }
+
+      a:hover {
+        background-color: darken(#fff, 10%);
+        color: darken($green-juice, 10%);
       }
     }
   }
