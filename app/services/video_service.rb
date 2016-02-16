@@ -16,6 +16,7 @@ class VideoService
         app_key: ENV['ZYPE_API_KEY'],
         sort: 'published_at',
         order: 'desc',
+        per_page: '20',
       }
     end
   end
