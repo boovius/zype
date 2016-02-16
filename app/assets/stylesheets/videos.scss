@@ -1,0 +1,87 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.videos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+
+  @media only screen and (max-width: 599px) {
+    .video {
+      width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 800px) and (min-width: 600px) {
+    .video {
+      width: 40%;
+    }
+  }
+
+  @media only screen and (min-width: 801px) {
+    .video {
+      min-width: 200px;
+    }
+  }
+
+  .video {
+    background-color: #eee;
+    box-shadow: 4px 4px 12px #555;
+    cursor: pointer;
+    padding: 20px;
+    transition: all .2s ease-in-out;
+    position: relative;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 1em;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .title {
+      font-size: 1.2em;
+    }
+
+    .published-at {
+      text-align: right;
+      font-size: .8em;
+
+      span:first-child {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .caption-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    color: white;
+    padding: 0 .8em;
+    overflow: auto;
+
+    .video-description {
+      margin-top: 1.5em;
+    }
+  }
+
+  .video:hover {
+    transform: scale3d(1.2, 1.2, 1);
+  }
+
+  .video:hover .caption-overlay {
+    display: block;
+  }
+}
