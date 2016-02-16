@@ -71,12 +71,12 @@
     overflow: auto;
 
     .video-description {
-      margin-top: 1.5em;
+      margin: 1.5em;
     }
   }
 
   .video:hover {
-    transform: scale3d(1.2, 1.2, 1);
+    transform: scale3d(1.1, 1.1, 1);
   }
 
   .video:hover .caption-overlay {
