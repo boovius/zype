@@ -25,5 +25,8 @@ module ZypeApp
 
     # autoload lib
     config.autoload_paths << Rails.root.join('lib')
+
+    # autoload responses within services
+    config.autoload_paths += %W( #{config.root}/app/services/responses )
   end
 end
