@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   root 'videos#index'
 
-  get 'videos/:id' => 'videos#show'
+  get 'videos/:zype_id' => 'videos#show'
 end
