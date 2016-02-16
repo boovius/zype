@@ -1,7 +1,7 @@
 .container
   .videos
     -@videos.each do |video|
-      %a(href="/videos/#{video.zype_id}")
+      %a(href="/videos/#{video.zype_id}/#{video.sub_req}")
         .video
           .video-thumbnail(style="background-image: url('#{video.thumbnails[1]['url']}'); height: #{video.thumbnails[1]['height']}px")
           %ul
