@@ -1,0 +1,12 @@
+.container
+  .videos
+    -@videos.each do |video|
+      .video
+        %ul
+          %li
+            =video.title
+          %li
+            =video.published_at
+        .caption-overlay
+          .video-description
+            =video.description
