@@ -6,7 +6,7 @@ class VideosResponse < Reverb::Response
       zype_id      = video_data['_id']
       title        = video_data['title']
       description  = video_data['description']
-      published_at = video_data['published_at']
+      published_at = Time.parse(video_data['published_at'])
       sub_req      = video_data['subscription_required']
       thumbnails   = video_data['thumbnails']
 
