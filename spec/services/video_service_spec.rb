@@ -7,7 +7,7 @@ RSpec.describe VideoService, :vcr do
     it 'gets videos from zype api' do
       expect(subject).to be_a VideosResponse
       expect(subject.data).to be_an Array
-      expect(subject.first).to be_a Video
+      expect(subject.data.first).to be_a Video
     end
   end
 end
