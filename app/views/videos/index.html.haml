@@ -2,11 +2,13 @@
   .videos
     -@videos.each do |video|
       .video
+        .video-thumbnail(style="background-image: url('#{video.thumbnails[1]['url']}'); height: #{video.thumbnails[1]['height']}px")
         %ul
           %li
             =video.title
-          %li
-            =video.published_at
+          %li.published-at
+            %span published:
+            %span #{time_ago_in_words(video.published_at)} ago
         .caption-overlay
           .video-description
             =video.description
