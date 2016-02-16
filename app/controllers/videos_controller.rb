@@ -4,5 +4,6 @@ class VideosController < ApplicationController
   end
 
   def show
+    @zype_id = params['zype_id']
   end
 end
