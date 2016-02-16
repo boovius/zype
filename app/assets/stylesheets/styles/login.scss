@@ -1,0 +1,24 @@
+#login {
+  font-size: 1.3em;
+
+  .login-container {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  div {
+    margin-bottom: 1em;
+  }
+
+  input {
+    display: block;
+    float: right;
+
+    &[type=submit] {
+      border-radius: 5px;
+      color: $green-juice;
+    }
+  }
+
+
+}
