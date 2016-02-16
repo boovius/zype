@@ -4,6 +4,7 @@ class VideosController < ApplicationController
   end
 
   def show
+    @sub_req = boolean_string(params['sub_req'])
     @zype_id = params['zype_id']
   end
 
