@@ -11,6 +11,7 @@ gem 'faraday'
 gem 'reverb'
 
 group :development, :test do
+  gem 'dotenv-rails'
   gem 'byebug'
   gem 'spring'
 end
