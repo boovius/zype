@@ -1,5 +1,5 @@
 .container {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-top: 20px;
 }
@@ -9,10 +9,28 @@
   flex-flow: row wrap;
   justify-content: space-around;
 
+
+  @media only screen and (max-width: 599px) {
+    .video {
+      width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 800px) and (min-width: 600px) {
+    .video {
+      width: 40%;
+    }
+  }
+
+  @media only screen and (min-width: 801px) {
+    .video {
+      min-width: 200px;
+    }
+  }
+
   .video {
     background-color: #eee;
     box-shadow: 4px 4px 12px #555;
-    min-width: 200px;
     cursor: pointer;
     padding: 20px;
     transition: all .2s ease-in-out;
