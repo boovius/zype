@@ -1,0 +1,32 @@
+$green-juice: #00b300;
+
+.player {
+  position: relative;
+
+  .firewall-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,.6);
+    text-align: center;
+
+    .firewall-controls {
+      font-size: 1.6em;
+      width: 50%;
+      margin: auto;
+      margin-top: 18%;
+      padding-bottom: 150px;
+      background-color: $green-juice;
+      border-radius: 7px;
+
+      h4 {
+        background-color: white;
+        color: $green-juice;
+        padding: 10px 0;
+        font-weight: normal;
+      }
+    }
+  }
+}
