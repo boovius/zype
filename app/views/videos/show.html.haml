@@ -4,10 +4,10 @@
       %script(src="https://player.zype.com/embed/#{@zype_id}.js?&access_token=#{@acces_token}")
       .firewall-overlay
         .firewall-controls
-          %h4 We are sorry but you must log in to view this video
-          %button
+          %h2 We are sorry but you must log in to view this video
+          %a
             log in
-          %button
+          %a
             subscribe
     -elsif @sub_req && @access_token
       %script(src="https://player.zype.com/embed/#{@zype_id}.js?&access_token=#{@acces_token}")
