@@ -1,4 +1,11 @@
 class Video
+  attr_reader :zype_id,
+    :title,
+    :description,
+    :sub_req,
+    :published_at,
+    :thumbnails
+
   def initialize(zype_id, title, description, sub_req, published_at, thumbnails)
     @zype_id = zype_id
     @title = title
