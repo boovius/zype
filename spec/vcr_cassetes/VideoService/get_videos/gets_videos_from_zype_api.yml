@@ -1,0 +1,163 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.zype.com/videos?app_key=<ZYPE_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 16 Feb 2016 00:51:17 GMT
+      Server:
+      - nginx/1.4.6 (Ubuntu)
+      Set-Cookie:
+      - request_method=GET; path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - a2e0c5a6-da32-4d96-9aa5-101d831b5433
+      X-Runtime:
+      - '0.066104'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '2815'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"response":[{"_id":"56a7b83e69702d2f83abdcb7","active":true,"categories":[{"title":"YouTube
+        Channel","value":["Saturday Night Live"]}],"country":null,"created_at":"2016-01-26T13:17:34.482-05:00","description":"Kyle
+        Mooney puts his interviewing skills to the test at the circus. Aired 3/28/15","disable_at":null,"discovery_url":null,"duration":193,"enable_at":null,"episode":null,"featured":false,"foreign_id":null,"keywords":[],"mature_content":false,"pass_required":false,"preview_ids":[],"published_at":"2015-03-29T16:21:19.000-04:00","purchase_price":null,"purchase_required":false,"rating":0.0,"related_playlist_ids":[],"rental_duration":null,"rental_price":null,"rental_required":false,"request_count":0,"season":null,"short_description":null,"site_id":"56a7b4a369702d1927000000","status":"created","subscription_required":false,"title":"Circus
+        - Saturday Night Live","updated_at":"2016-01-26T13:17:57.793-05:00","zobject_ids":[],"thumbnails":[{"aspect_ratio":1.33,"height":90,"name":null,"url":"https://i.ytimg.com/vi/bj3D2RwyhuU/default.jpg","width":120},{"aspect_ratio":1.78,"height":180,"name":null,"url":"https://i.ytimg.com/vi/bj3D2RwyhuU/mqdefault.jpg","width":320},{"aspect_ratio":1.33,"height":360,"name":null,"url":"https://i.ytimg.com/vi/bj3D2RwyhuU/hqdefault.jpg","width":480},{"aspect_ratio":1.33,"height":480,"name":null,"url":"https://i.ytimg.com/vi/bj3D2RwyhuU/sddefault.jpg","width":640},{"aspect_ratio":1.78,"height":720,"name":null,"url":"https://i.ytimg.com/vi/bj3D2RwyhuU/maxresdefault.jpg","width":1280}],"hulu_id":null,"youtube_id":"bj3D2RwyhuU","vimeo_id":null,"crunchyroll_id":null,"transcoded":false},{"_id":"56a7b83169702d2f834bd9b7","active":true,"categories":[{"title":"YouTube
+        Channel","value":["Saturday Night Live"]}],"country":null,"created_at":"2016-01-26T13:17:21.988-05:00","description":"Weekend
+        Update anchors Colin Jost and Michael Che tackle the week''s biggest news,
+        including Jeb Bush saying he''d send troops to Syria and Bobby Jindal ending
+        his presidential campaign. Colin and Michael discuss the Syrian refugee crisis
+        and Newcaster of Tomorrow Laura Parsons (Vanessa Bayer) stops by.\n\nSubscribe
+        to the SNL channel for more clips: http://goo.gl/24RRTv\n\nDownload the SNL
+        App for free: http://www.nbc.com/saturday-night-live/app\n\nFor more SNL 40th
+        Anniversary Special: http://goo.gl/gLyPTc\n\nGet more SNL on Hulu Plus: http://www.hulu.com/saturday-night-live\n\nGet
+        more SNL: http://www.nbc.com/saturday-night-live\nFull Episodes: http://www.nbc.com/saturday-night-live/video\n\nLike
+        SNL: https://www.facebook.com/snl\nFollow SNL: https://twitter.com/nbcsnl\nSNL
+        Tumblr: http://nbcsnl.tumblr.com/\nSNL Instagram: http://instagram.com/nbcsnl
+        \nSNL Google+: https://plus.google.com/+SaturdayNightLive/ \nSNL Pinterest:
+        http://www.pinterest.com/nbcsnl/","disable_at":null,"discovery_url":null,"duration":392,"enable_at":null,"episode":null,"featured":false,"foreign_id":null,"keywords":[],"mature_content":false,"pass_required":false,"preview_ids":[],"published_at":"2015-11-22T04:14:56.000-05:00","purchase_price":null,"purchase_required":false,"rating":0.0,"related_playlist_ids":[],"rental_duration":null,"rental_price":null,"rental_required":false,"request_count":0,"season":null,"short_description":null,"site_id":"56a7b4a369702d1927000000","status":"created","subscription_required":false,"title":"Weekend
+        Update 11-21-15, Part 1 of 2 - SNL","updated_at":"2016-01-26T13:17:54.442-05:00","zobject_ids":[],"thumbnails":[{"aspect_ratio":1.33,"height":90,"name":null,"url":"https://i.ytimg.com/vi/uT16qYPlt2A/default.jpg","width":120},{"aspect_ratio":1.78,"height":180,"name":null,"url":"https://i.ytimg.com/vi/uT16qYPlt2A/mqdefault.jpg","width":320},{"aspect_ratio":1.33,"height":360,"name":null,"url":"https://i.ytimg.com/vi/uT16qYPlt2A/hqdefault.jpg","width":480},{"aspect_ratio":1.33,"height":480,"name":null,"url":"https://i.ytimg.com/vi/uT16qYPlt2A/sddefault.jpg","width":640},{"aspect_ratio":1.78,"height":720,"name":null,"url":"https://i.ytimg.com/vi/uT16qYPlt2A/maxresdefault.jpg","width":1280}],"hulu_id":null,"youtube_id":"uT16qYPlt2A","vimeo_id":null,"crunchyroll_id":null,"transcoded":false},{"_id":"56a7b83269702d2f834ed9b7","active":true,"categories":[{"title":"YouTube
+        Channel","value":["Saturday Night Live"]}],"country":null,"created_at":"2016-01-26T13:17:22.037-05:00","description":"Weekend
+        Update anchors Colin Jost and Michael Che tackle the week''s biggest news,
+        including a study saying that house cats share traits with African lions and
+        Jared Fogle''s prison sentence. David Ortiz (Kenan Thompson) stops by to discuss
+        his retirement from baseball.\n\nSubscribe to the SNL channel for more clips:
+        http://goo.gl/24RRTv\n\nDownload the SNL App for free: http://www.nbc.com/saturday-night-live/app\n\nFor
+        more SNL 40th Anniversary Special: http://goo.gl/gLyPTc\n\nGet more SNL on
+        Hulu Plus: http://www.hulu.com/saturday-night-live\n\nGet more SNL: http://www.nbc.com/saturday-night-live\nFull
+        Episodes: http://www.nbc.com/saturday-night-live/video\n\nLike SNL: https://www.facebook.com/snl\nFollow
+        SNL: https://twitter.com/nbcsnl\nSNL Tumblr: http://nbcsnl.tumblr.com/\nSNL
+        Instagram: http://instagram.com/nbcsnl \nSNL Google+: https://plus.google.com/+SaturdayNightLive/
+        \nSNL Pinterest: http://www.pinterest.com/nbcsnl/","disable_at":null,"discovery_url":null,"duration":372,"enable_at":null,"episode":null,"featured":false,"foreign_id":null,"keywords":[],"mature_content":false,"pass_required":false,"preview_ids":[],"published_at":"2015-11-22T04:14:51.000-05:00","purchase_price":null,"purchase_required":false,"rating":0.0,"related_playlist_ids":[],"rental_duration":null,"rental_price":null,"rental_required":false,"request_count":0,"season":null,"short_description":null,"site_id":"56a7b4a369702d1927000000","status":"created","subscription_required":false,"title":"Weekend
+        Update 11-21-15, Part 2 of 2 - SNL","updated_at":"2016-01-26T13:17:54.457-05:00","zobject_ids":[],"thumbnails":[{"aspect_ratio":1.33,"height":90,"name":null,"url":"https://i.ytimg.com/vi/4vi1mjp3PTw/default.jpg","width":120},{"aspect_ratio":1.78,"height":180,"name":null,"url":"https://i.ytimg.com/vi/4vi1mjp3PTw/mqdefault.jpg","width":320},{"aspect_ratio":1.33,"height":360,"name":null,"url":"https://i.ytimg.com/vi/4vi1mjp3PTw/hqdefault.jpg","width":480},{"aspect_ratio":1.33,"height":480,"name":null,"url":"https://i.ytimg.com/vi/4vi1mjp3PTw/sddefault.jpg","width":640},{"aspect_ratio":1.78,"height":720,"name":null,"url":"https://i.ytimg.com/vi/4vi1mjp3PTw/maxresdefault.jpg","width":1280}],"hulu_id":null,"youtube_id":"4vi1mjp3PTw","vimeo_id":null,"crunchyroll_id":null,"transcoded":false},{"_id":"56a7b83169702d2f8345d9b7","active":true,"categories":[{"title":"YouTube
+        Channel","value":["Saturday Night Live"]}],"country":null,"created_at":"2016-01-26T13:17:21.875-05:00","description":"Ryan
+        Gosling hosts Saturday Night Live on December 5, 2015 with musical guest Leon
+        Bridges.\n\nSubscribe to the SNL channel for more clips: http://goo.gl/24RRTv\n\nDownload
+        the SNL App for free: http://www.nbc.com/saturday-night-live/app\n\nFor more
+        SNL 40th Anniversary Special: http://goo.gl/gLyPTc\n\nGet more SNL on Hulu
+        Plus: http://www.hulu.com/saturday-night-live\n\nGet more SNL: http://www.nbc.com/saturday-night-live\nFull
+        Episodes: http://www.nbc.com/saturday-night-live/video\n\nLike SNL: https://www.facebook.com/snl\nFollow
+        SNL: https://twitter.com/nbcsnl\nSNL Tumblr: http://nbcsnl.tumblr.com/\nSNL
+        Instagram: http://instagram.com/nbcsnl \nSNL Google+: https://plus.google.com/+SaturdayNightLive/
+        \nSNL Pinterest: http://www.pinterest.com/nbcsnl/","disable_at":null,"discovery_url":null,"duration":67,"enable_at":null,"episode":null,"featured":false,"foreign_id":null,"keywords":[],"mature_content":false,"pass_required":false,"preview_ids":[],"published_at":"2015-12-03T18:19:10.000-05:00","purchase_price":null,"purchase_required":false,"rating":0.0,"related_playlist_ids":[],"rental_duration":null,"rental_price":null,"rental_required":false,"request_count":0,"season":null,"short_description":null,"site_id":"56a7b4a369702d1927000000","status":"created","subscription_required":false,"title":"SNL
+        Host Ryan Gosling & Taran Killam Audition For Leon Bridges","updated_at":"2016-01-26T13:17:54.408-05:00","zobject_ids":[],"thumbnails":[{"aspect_ratio":1.33,"height":90,"name":null,"url":"https://i.ytimg.com/vi/ok7AZ98ZmKM/default.jpg","width":120},{"aspect_ratio":1.78,"height":180,"name":null,"url":"https://i.ytimg.com/vi/ok7AZ98ZmKM/mqdefault.jpg","width":320},{"aspect_ratio":1.33,"height":360,"name":null,"url":"https://i.ytimg.com/vi/ok7AZ98ZmKM/hqdefault.jpg","width":480},{"aspect_ratio":1.33,"height":480,"name":null,"url":"https://i.ytimg.com/vi/ok7AZ98ZmKM/sddefault.jpg","width":640},{"aspect_ratio":1.78,"height":720,"name":null,"url":"https://i.ytimg.com/vi/ok7AZ98ZmKM/maxresdefault.jpg","width":1280}],"hulu_id":null,"youtube_id":"ok7AZ98ZmKM","vimeo_id":null,"crunchyroll_id":null,"transcoded":false},{"_id":"56a7b83169702d2f8348d9b7","active":true,"categories":[{"title":"YouTube
+        Channel","value":["Saturday Night Live"]}],"country":null,"created_at":"2016-01-26T13:17:21.926-05:00","description":"Ryan
+        Gosling hosts Saturday Night Live on December 5, 2015 with musical guest Leon
+        Bridges.\n\nSubscribe to the SNL channel for more clips: http://goo.gl/24RRTv\n\nDownload
+        the SNL App for free: http://www.nbc.com/saturday-night-live/app\n\nFor more
+        SNL 40th Anniversary Special: http://goo.gl/gLyPTc\n\nGet more SNL on Hulu
+        Plus: http://www.hulu.com/saturday-night-live\n\nGet more SNL: http://www.nbc.com/saturday-night-live\nFull
+        Episodes: http://www.nbc.com/saturday-night-live/video\n\nLike SNL: https://www.facebook.com/snl\nFollow
+        SNL: https://twitter.com/nbcsnl\nSNL Tumblr: http://nbcsnl.tumblr.com/\nSNL
+        Instagram: http://instagram.com/nbcsnl \nSNL Google+: https://plus.google.com/+SaturdayNightLive/
+        \nSNL Pinterest: http://www.pinterest.com/nbcsnl/","disable_at":null,"discovery_url":null,"duration":142,"enable_at":null,"episode":null,"featured":false,"foreign_id":null,"keywords":[],"mature_content":false,"pass_required":false,"preview_ids":[],"published_at":"2015-12-02T16:10:16.000-05:00","purchase_price":null,"purchase_required":false,"rating":0.0,"related_playlist_ids":[],"rental_duration":null,"rental_price":null,"rental_required":false,"request_count":0,"season":null,"short_description":null,"site_id":"56a7b4a369702d1927000000","status":"created","subscription_required":false,"title":"SNL
+        Host Ryan Gosling & Aidy Bryant Wail on Their Pecs","updated_at":"2016-01-26T13:17:54.426-05:00","zobject_ids":[],"thumbnails":[{"aspect_ratio":1.33,"height":90,"name":null,"url":"https://i.ytimg.com/vi/wuVeezrsVeQ/default.jpg","width":120},{"aspect_ratio":1.78,"height":180,"name":null,"url":"https://i.ytimg.com/vi/wuVeezrsVeQ/mqdefault.jpg","width":320},{"aspect_ratio":1.33,"height":360,"name":null,"url":"https://i.ytimg.com/vi/wuVeezrsVeQ/hqdefault.jpg","width":480},{"aspect_ratio":1.33,"height":480,"name":null,"url":"https://i.ytimg.com/vi/wuVeezrsVeQ/sddefault.jpg","width":640},{"aspect_ratio":1.78,"height":720,"name":null,"url":"https://i.ytimg.com/vi/wuVeezrsVeQ/maxresdefault.jpg","width":1280}],"hulu_id":null,"youtube_id":"wuVeezrsVeQ","vimeo_id":null,"crunchyroll_id":null,"transcoded":false},{"_id":"56a7b83169702d2f833fd9b7","active":true,"categories":[{"title":"YouTube
+        Channel","value":["Saturday Night Live"]}],"country":null,"created_at":"2016-01-26T13:17:21.772-05:00","description":"Secondhand
+        news correspondent Anthony Crispino (Bobby Moynihan) introduces Colin to his
+        third-hand news guy, Angelo Skaggs (Ryan Gosling).\n\nSubscribe to the SNL
+        channel for more clips: http://goo.gl/24RRTv\n\nDownload the SNL App for free:
+        http://www.nbc.com/saturday-night-live/app\n\nFor more SNL 40th Anniversary
+        Special: http://goo.gl/gLyPTc\n\nGet more SNL on Hulu Plus: http://www.hulu.com/saturday-night-live\n\nGet
+        more SNL: http://www.nbc.com/saturday-night-live\nFull Episodes: http://www.nbc.com/saturday-night-live/video\n\nLike
+        SNL: https://www.facebook.com/snl\nFollow SNL: https://twitter.com/nbcsnl\nSNL
+        Tumblr: http://nbcsnl.tumblr.com/\nSNL Instagram: http://instagram.com/nbcsnl
+        \nSNL Google+: https://plus.google.com/+SaturdayNightLive/ \nSNL Pinterest:
+        http://www.pinterest.com/nbcsnl/","disable_at":null,"discovery_url":null,"duration":261,"enable_at":null,"episode":null,"featured":false,"foreign_id":null,"keywords":[],"mature_content":false,"pass_required":false,"preview_ids":[],"published_at":"2015-12-06T03:58:32.000-05:00","purchase_price":null,"purchase_required":false,"rating":0.0,"related_playlist_ids":[],"rental_duration":null,"rental_price":null,"rental_required":false,"request_count":0,"season":null,"short_description":null,"site_id":"56a7b4a369702d1927000000","status":"created","subscription_required":false,"title":"Weekend
+        Update: Anthony Crispino and Angelo Skaggs - SNL","updated_at":"2016-01-26T13:17:54.372-05:00","zobject_ids":[],"thumbnails":[{"aspect_ratio":1.33,"height":90,"name":null,"url":"https://i.ytimg.com/vi/6t7h2VyEm4M/default.jpg","width":120},{"aspect_ratio":1.78,"height":180,"name":null,"url":"https://i.ytimg.com/vi/6t7h2VyEm4M/mqdefault.jpg","width":320},{"aspect_ratio":1.33,"height":360,"name":null,"url":"https://i.ytimg.com/vi/6t7h2VyEm4M/hqdefault.jpg","width":480},{"aspect_ratio":1.33,"height":480,"name":null,"url":"https://i.ytimg.com/vi/6t7h2VyEm4M/sddefault.jpg","width":640},{"aspect_ratio":1.78,"height":720,"name":null,"url":"https://i.ytimg.com/vi/6t7h2VyEm4M/maxresdefault.jpg","width":1280}],"hulu_id":null,"youtube_id":"6t7h2VyEm4M","vimeo_id":null,"crunchyroll_id":null,"transcoded":false},{"_id":"56a7b83169702d2f8342d9b7","active":true,"categories":[{"title":"YouTube
+        Channel","value":["Saturday Night Live"]}],"country":null,"created_at":"2016-01-26T13:17:21.821-05:00","description":"Melanie
+        (Aidy Bryant) creeps out her friends when she hits on birthday girl Taylor''s
+        dad (Ryan Gosling).\n\nSubscribe to the SNL channel for more clips: http://goo.gl/24RRTv\n\nDownload
+        the SNL App for free: http://www.nbc.com/saturday-night-live/app\n\nFor more
+        SNL 40th Anniversary Special: http://goo.gl/gLyPTc\n\nGet more SNL on Hulu
+        Plus: http://www.hulu.com/saturday-night-live\n\nGet more SNL: http://www.nbc.com/saturday-night-live\nFull
+        Episodes: http://www.nbc.com/saturday-night-live/video\n\nLike SNL: https://www.facebook.com/snl\nFollow
+        SNL: https://twitter.com/nbcsnl\nSNL Tumblr: http://nbcsnl.tumblr.com/\nSNL
+        Instagram: http://instagram.com/nbcsnl \nSNL Google+: https://plus.google.com/+SaturdayNightLive/
+        \nSNL Pinterest: http://www.pinterest.com/nbcsnl/","disable_at":null,"discovery_url":null,"duration":334,"enable_at":null,"episode":null,"featured":false,"foreign_id":null,"keywords":[],"mature_content":false,"pass_required":false,"preview_ids":[],"published_at":"2015-12-06T03:57:37.000-05:00","purchase_price":null,"purchase_required":false,"rating":0.0,"related_playlist_ids":[],"rental_duration":null,"rental_price":null,"rental_required":false,"request_count":0,"season":null,"short_description":null,"site_id":"56a7b4a369702d1927000000","status":"created","subscription_required":false,"title":"Birthday
+        Party - SNL","updated_at":"2016-01-26T13:17:54.390-05:00","zobject_ids":[],"thumbnails":[{"aspect_ratio":1.33,"height":90,"name":null,"url":"https://i.ytimg.com/vi/ruXBibhbD6o/default.jpg","width":120},{"aspect_ratio":1.78,"height":180,"name":null,"url":"https://i.ytimg.com/vi/ruXBibhbD6o/mqdefault.jpg","width":320},{"aspect_ratio":1.33,"height":360,"name":null,"url":"https://i.ytimg.com/vi/ruXBibhbD6o/hqdefault.jpg","width":480},{"aspect_ratio":1.33,"height":480,"name":null,"url":"https://i.ytimg.com/vi/ruXBibhbD6o/sddefault.jpg","width":640},{"aspect_ratio":1.78,"height":720,"name":null,"url":"https://i.ytimg.com/vi/ruXBibhbD6o/maxresdefault.jpg","width":1280}],"hulu_id":null,"youtube_id":"ruXBibhbD6o","vimeo_id":null,"crunchyroll_id":null,"transcoded":false},{"_id":"56a7b83169702d2f8339d9b7","active":true,"categories":[{"title":"YouTube
+        Channel","value":["Saturday Night Live"]}],"country":null,"created_at":"2016-01-26T13:17:21.674-05:00","description":"Santa''s
+        elves (Kenan Thompson, Vanessa Bayer, Ryan Gosling) purposely don''t make
+        any toys in the hopes that Santa (Bobby Moynihan) will punish them.\n\nSubscribe
+        to the SNL channel for more clips: http://goo.gl/24RRTv\n\nDownload the SNL
+        App for free: http://www.nbc.com/saturday-night-live/app\n\nFor more SNL 40th
+        Anniversary Special: http://goo.gl/gLyPTc\n\nGet more SNL on Hulu Plus: http://www.hulu.com/saturday-night-live\n\nGet
+        more SNL: http://www.nbc.com/saturday-night-live\nFull Episodes: http://www.nbc.com/saturday-night-live/video\n\nLike
+        SNL: https://www.facebook.com/snl\nFollow SNL: https://twitter.com/nbcsnl\nSNL
+        Tumblr: http://nbcsnl.tumblr.com/\nSNL Instagram: http://instagram.com/nbcsnl
+        \nSNL Google+: https://plus.google.com/+SaturdayNightLive/ \nSNL Pinterest:
+        http://www.pinterest.com/nbcsnl/","disable_at":null,"discovery_url":null,"duration":300,"enable_at":null,"episode":null,"featured":false,"foreign_id":null,"keywords":[],"mature_content":false,"pass_required":false,"preview_ids":[],"published_at":"2015-12-06T04:02:50.000-05:00","purchase_price":null,"purchase_required":false,"rating":0.0,"related_playlist_ids":[],"rental_duration":null,"rental_price":null,"rental_required":false,"request_count":0,"season":null,"short_description":null,"site_id":"56a7b4a369702d1927000000","status":"created","subscription_required":false,"title":"Santa
+        & The Elves - SNL","updated_at":"2016-01-26T13:17:54.316-05:00","zobject_ids":[],"thumbnails":[{"aspect_ratio":1.33,"height":90,"name":null,"url":"https://i.ytimg.com/vi/L9SqBIcKJnM/default.jpg","width":120},{"aspect_ratio":1.78,"height":180,"name":null,"url":"https://i.ytimg.com/vi/L9SqBIcKJnM/mqdefault.jpg","width":320},{"aspect_ratio":1.33,"height":360,"name":null,"url":"https://i.ytimg.com/vi/L9SqBIcKJnM/hqdefault.jpg","width":480},{"aspect_ratio":1.33,"height":480,"name":null,"url":"https://i.ytimg.com/vi/L9SqBIcKJnM/sddefault.jpg","width":640},{"aspect_ratio":1.78,"height":720,"name":null,"url":"https://i.ytimg.com/vi/L9SqBIcKJnM/maxresdefault.jpg","width":1280}],"hulu_id":null,"youtube_id":"L9SqBIcKJnM","vimeo_id":null,"crunchyroll_id":null,"transcoded":false},{"_id":"56a7b83169702d2f833cd9b7","active":true,"categories":[{"title":"YouTube
+        Channel","value":["Saturday Night Live"]}],"country":null,"created_at":"2016-01-26T13:17:21.723-05:00","description":"Three
+        people (Kate McKinnon, Cecily Strong, Ryan Gosling) share very different stories
+        about their alien abduction.\n\nSubscribe to the SNL channel for more clips:
+        http://goo.gl/24RRTv\n\nDownload the SNL App for free: http://www.nbc.com/saturday-night-live/app\n\nFor
+        more SNL 40th Anniversary Special: http://goo.gl/gLyPTc\n\nGet more SNL on
+        Hulu Plus: http://www.hulu.com/saturday-night-live\n\nGet more SNL: http://www.nbc.com/saturday-night-live\nFull
+        Episodes: http://www.nbc.com/saturday-night-live/video\n\nLike SNL: https://www.facebook.com/snl\nFollow
+        SNL: https://twitter.com/nbcsnl\nSNL Tumblr: http://nbcsnl.tumblr.com/\nSNL
+        Instagram: http://instagram.com/nbcsnl \nSNL Google+: https://plus.google.com/+SaturdayNightLive/
+        \nSNL Pinterest: http://www.pinterest.com/nbcsnl/","disable_at":null,"discovery_url":null,"duration":347,"enable_at":null,"episode":null,"featured":false,"foreign_id":null,"keywords":[],"mature_content":false,"pass_required":false,"preview_ids":[],"published_at":"2015-12-06T04:01:14.000-05:00","purchase_price":null,"purchase_required":false,"rating":0.0,"related_playlist_ids":[],"rental_duration":null,"rental_price":null,"rental_required":false,"request_count":0,"season":null,"short_description":null,"site_id":"56a7b4a369702d1927000000","status":"created","subscription_required":false,"title":"Close
+        Encounter - SNL","updated_at":"2016-01-26T13:17:54.350-05:00","zobject_ids":[],"thumbnails":[{"aspect_ratio":1.33,"height":90,"name":null,"url":"https://i.ytimg.com/vi/PfPdYYsEfAE/default.jpg","width":120},{"aspect_ratio":1.78,"height":180,"name":null,"url":"https://i.ytimg.com/vi/PfPdYYsEfAE/mqdefault.jpg","width":320},{"aspect_ratio":1.33,"height":360,"name":null,"url":"https://i.ytimg.com/vi/PfPdYYsEfAE/hqdefault.jpg","width":480},{"aspect_ratio":1.33,"height":480,"name":null,"url":"https://i.ytimg.com/vi/PfPdYYsEfAE/sddefault.jpg","width":640},{"aspect_ratio":1.78,"height":720,"name":null,"url":"https://i.ytimg.com/vi/PfPdYYsEfAE/maxresdefault.jpg","width":1280}],"hulu_id":null,"youtube_id":"PfPdYYsEfAE","vimeo_id":null,"crunchyroll_id":null,"transcoded":false},{"_id":"56a7b83169702d2f8333d9b7","active":true,"categories":[{"title":"YouTube
+        Channel","value":["Saturday Night Live"]}],"country":null,"created_at":"2016-01-26T13:17:21.575-05:00","description":"In
+        an effort to be better liked by his neighbors (Ryan Gosling, Beck Bennett),
+        Dougie (Kyle Mooney) goes from nerdy to cool.\n\nSubscribe to the SNL channel
+        for more clips: http://goo.gl/24RRTv\n\nDownload the SNL App for free: http://www.nbc.com/saturday-night-liv...\n\nFor
+        more SNL 40th Anniversary Special: http://goo.gl/gLyPTc\n\nGet more SNL on
+        Hulu Plus: http://www.hulu.com/saturday-night-live\n\nGet more SNL: http://www.nbc.com/saturday-night-live\nFull
+        Episodes: http://www.nbc.com/saturday-night-liv...\n\nLike SNL: https://www.facebook.com/snl\nFollow
+        SNL: https://twitter.com/nbcsnl\nSNL Tumblr: http://nbcsnl.tumblr.com/\nSNL
+        Instagram: http://instagram.com/nbcsnl \nSNL Google+: https://plus.google.com/+SaturdayNigh...
+        \nSNL Pinterest: http://www.pinterest.com/nbcsnl/","disable_at":null,"discovery_url":null,"duration":269,"enable_at":null,"episode":null,"featured":false,"foreign_id":null,"keywords":[],"mature_content":false,"pass_required":false,"preview_ids":[],"published_at":"2015-12-08T14:36:42.000-05:00","purchase_price":null,"purchase_required":false,"rating":0.0,"related_playlist_ids":[],"rental_duration":null,"rental_price":null,"rental_required":false,"request_count":0,"season":null,"short_description":null,"site_id":"56a7b4a369702d1927000000","status":"created","subscription_required":false,"title":"Cut
+        For Time: Cool (Ryan Gosling) - SNL","updated_at":"2016-01-26T13:17:54.275-05:00","zobject_ids":[],"thumbnails":[{"aspect_ratio":1.33,"height":90,"name":null,"url":"https://i.ytimg.com/vi/a6I9u3wjn-A/default.jpg","width":120},{"aspect_ratio":1.78,"height":180,"name":null,"url":"https://i.ytimg.com/vi/a6I9u3wjn-A/mqdefault.jpg","width":320},{"aspect_ratio":1.33,"height":360,"name":null,"url":"https://i.ytimg.com/vi/a6I9u3wjn-A/hqdefault.jpg","width":480},{"aspect_ratio":1.33,"height":480,"name":null,"url":"https://i.ytimg.com/vi/a6I9u3wjn-A/sddefault.jpg","width":640},{"aspect_ratio":1.78,"height":720,"name":null,"url":"https://i.ytimg.com/vi/a6I9u3wjn-A/maxresdefault.jpg","width":1280}],"hulu_id":null,"youtube_id":"a6I9u3wjn-A","vimeo_id":null,"crunchyroll_id":null,"transcoded":false}],"pagination":{"current":1,"previous":null,"next":2,"per_page":10,"pages":25}}'
+    http_version: 
+  recorded_at: Tue, 16 Feb 2016 00:51:20 GMT
+recorded_with: VCR 3.0.1
