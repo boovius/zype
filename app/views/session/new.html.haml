@@ -1,0 +1,15 @@
+.container
+  #login
+    .login-container
+      %h2 Please login:
+      %form(method='post')
+        .username
+          %label(for='username')
+            Username
+          %input(type='text' name='username' id='username')
+        .password
+          %label(for='password')
+            Password
+          %input(type='password' name='password' id='password')
+        .submit
+          %input(type='submit')
