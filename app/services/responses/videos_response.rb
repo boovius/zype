@@ -10,7 +10,7 @@ class VideosResponse < Reverb::Response
       sub_req      = video_data['subscription_required']
       thumbnails   = video_data['thumbnails']
 
-      video = Video.new zype_id, title, description, published_at, sub_req, thumbnails
+      video = Video.new zype_id, title, description, sub_req, published_at, thumbnails
       self.data << video
     end
   end
