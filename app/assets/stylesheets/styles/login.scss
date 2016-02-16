@@ -2,23 +2,21 @@
   font-size: 1.3em;
 
   .login-container {
-    width: 30%;
+    width: 40%;
     margin: 0 auto;
+    font-size: 1.2em;
   }
 
-  div {
+  .header {
+    text-align: center;
+  }
+
+  .form-group {
     margin-bottom: 1em;
   }
 
   input {
     display: block;
     float: right;
-
-    &[type=submit] {
-      border-radius: 5px;
-      color: $green-juice;
-    }
   }
-
-
 }
