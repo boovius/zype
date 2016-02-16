@@ -12,7 +12,11 @@ class VideoService
     end
 
     def params
-      { app_key: ENV['ZYPE_API_KEY'] }
+      {
+        app_key: ENV['ZYPE_API_KEY'],
+        sort: 'published_at',
+        order: 'desc',
+      }
     end
   end
 end
