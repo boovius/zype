@@ -6,4 +6,10 @@ class VideosController < ApplicationController
   def show
     @zype_id = params['zype_id']
   end
+
+  private
+
+  def boolean_string(string)
+    ActiveRecord::Type::Boolean.new.type_cast_from_user(string)
+  end
 end
