@@ -26,19 +26,8 @@
       }
 
       a {
-        display: inline-block;
         margin: 2em 1.2em 0;
-        padding: 1em;
-        border-radius: .2em;
-        background-color: #fff;
-        color: $green-juice;
         font-size: 1.2em;
-        cursor: pointer;
-      }
-
-      a:hover {
-        background-color: darken(#fff, 10%);
-        color: darken($green-juice, 10%);
       }
     }
   }

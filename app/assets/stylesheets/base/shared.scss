@@ -3,3 +3,18 @@
   margin: 0 auto;
   padding-top: 20px;
 }
+
+.btn {
+  display: inline-block;
+  padding: 1em;
+  border-radius: .2em;
+  background-color: #fff;
+  color: $green-juice;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: darken(#fff, 10%);
+  color: darken($green-juice, 10%);
+}

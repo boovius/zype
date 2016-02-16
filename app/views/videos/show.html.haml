@@ -5,9 +5,9 @@
       .firewall-overlay
         .firewall-controls
           %h2 We are sorry but you must log in to view this video
-          %a
+          %a.btn(href='/login')
             log in
-          %a
+          %a.btn
             subscribe
     -elsif @sub_req && @access_token
       %script(src="https://player.zype.com/embed/#{@zype_id}.js?&access_token=#{@acces_token}")
