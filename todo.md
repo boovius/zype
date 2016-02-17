@@ -1,0 +1,47 @@
+Zype Coding Challenge TODO
+==========================
+
+ - display list of video titles
+   - make call to zype api
+   - new up ruby objects
+   - send to front end
+ - display list of video thumbnails
+   - take video information
+   - style video thumbnails
+ - create video player screen
+   - create route for video player
+   - create controller action for single player
+   - create html view
+   - send param of video id to backend
+   - send it back to frontend for rendering
+ - implement subscription logic
+   - add boolean sub_req param to route
+   - add param to href on every video on index pg
+   - bring param through in controller
+     - format string to boolean
+   - if sub req
+     - render sub_req videos differently
+     - if subscription required, display overlay that "firewalls" video
+ - login
+   - post to zype oauth api and get access token
+ - navbar
+   - create navbar
+   - store username in session
+   - implement method to get username
+   - implement logout
+ - display errors to user
+   - handle 400s and bad auths
+ - pagination
+   - send in a page token as param for video_service get_videos
+   - links for next and previous pages
+ - check for token expiration before using
+
+---- extra ----
+ - deploy
+ - spice up the font
+ - put specs on controller logic
+ - db
+   - persist login state and access tokens
+ - give more sophisticated pagination UI
+ - video details on video screen
+   - cron job to add videos to db
