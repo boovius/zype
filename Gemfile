@@ -10,6 +10,7 @@ gem 'turbolinks'
 gem 'haml-rails'
 gem 'faraday'
 gem 'reverb'
+gem 'toastr-rails'
 
 group :development, :test do
   gem 'dotenv-rails'
