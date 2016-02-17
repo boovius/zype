@@ -5,6 +5,14 @@ class VideosController < ApplicationController
 
   def show
     @sub_req = boolean_string(params['sub_req'])
+
+    @access_token = session['access_token']
+
+    if @sub_req && @access_token.empty?
+      @sign_in_required = true
+      session['zype_id'] = params['zype_id']
+    end
+
     @zype_id = params['zype_id']
   end
 
