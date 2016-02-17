@@ -4,7 +4,9 @@ class VideosController < ApplicationController
     params[:page].blank? ? @page = 1 : @page = params[:page].to_i
 
     session.delete(:zype_id)
-    @videos = VideoService.get_videos @page
+
+    videos_response = VideoService.get_videos @page
+    @videos = videos_response.data
   end
 
   def show
