@@ -28,6 +28,6 @@ class VideosController < ApplicationController
   end
 
   def invalid_access_token
-    session['access_token'].blank? || Time.now - 60 > session['expires_in']
+    session['access_token'].blank? || Time.now - 60 > session['expires_at']
   end
 end

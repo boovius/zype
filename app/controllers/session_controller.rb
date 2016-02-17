@@ -8,7 +8,7 @@ class SessionController < ApplicationController
     if response.success?
       session['username'] = params['username']
       session['access_token'] = response.data[:access_token]
-      session['expires_in'] = response.data[:expires_in]
+      session['expires_at'] = response.data[:expires_at]
 
       redirect_to "/videos/#{session['zype_id']}/true"
     else
@@ -21,7 +21,7 @@ class SessionController < ApplicationController
   def destroy
     session.delete(:username)
     session.delete(:access_token)
-    session.delete(:expires_in)
+    session.delete(:expires_at)
     session.delete(:zype_id)
 
     redirect_to '/'

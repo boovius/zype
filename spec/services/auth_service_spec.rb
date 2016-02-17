@@ -14,7 +14,7 @@ RSpec.describe AuthService, :vcr do
       expect(subject.data).to_not be_nil
       expect(subject.data).to be_an Hash
       expect(subject.data[:access_token]).to be_a String
-      expect(subject.data[:expires_in]).to be_a Time
+      expect(subject.data[:expires_at]).to be_a Time
     end
   end
 end
