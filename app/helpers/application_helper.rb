@@ -3,10 +3,18 @@ module ApplicationHelper
     flash_messages = []
     flash.keys.each do |key|
       message = flash[key]
-      type = 'success' if key == 'success'
-      type = 'info'    if key == 'notice'
-      type = 'warning' if key == 'alert'
-      type = 'error'   if key == 'error'
+      case key
+      when 'success'
+        type = 'success'
+      when 'notice'
+        type = 'info'
+      when 'alert'
+        type = 'warning'
+      when 'error'
+        type = 'error'
+      else
+        type = 'info'
+      end
       text = "<script>toastr.#{type}('#{message}');</script>"
       flash_messages << text.html_safe if message
     end
