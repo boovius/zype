@@ -12,6 +12,8 @@ class SessionController < ApplicationController
 
       redirect_to "/videos/#{session['zype_id']}/true"
     else
+      flash['error'] = 'sorry those credentials do not appear valid, '
+      flash['error'] += 'please try logging in again'
       redirect_to '/login'
     end
   end
