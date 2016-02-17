@@ -13,6 +13,8 @@ VCR.configure do |config|
   config.configure_rspec_metadata!
   [
     'ZYPE_API_KEY',
+    'ZYPE_CLIENT_ID',
+    'ZYPE_CLIENT_SECRET',
   ].each do |env_var|
     config.filter_sensitive_data("<#{env_var}>") { ENV[env_var] }
   end

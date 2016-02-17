@@ -1,0 +1,16 @@
+.container
+  #login
+    .login-container
+      %h2.header Please login
+      %form(method='post')
+        %input(type='hidden' name="#{request_forgery_protection_token.to_s}" value="#{form_authenticity_token}")
+        .form-group
+          %label(for='username')
+            Username:
+          %input(type='text' name='username' id='username')
+        .form-group
+          %label(for='password')
+            Password:
+          %input(type='password' name='password' id='password')
+        .form-group
+          %input.btn(type='submit')
