@@ -7,4 +7,11 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
+    %nav.clearfix
+      .home
+        %a.btn(href='/')
+          %img(src='http://dev.zype.com/assets/logo.png')
+      .login
+        %a.btn(href='/login')
+          login!
     = yield

@@ -18,3 +18,9 @@
   background-color: darken(#fff, 10%);
   color: darken($green-juice, 10%);
 }
+
+.clearfix:after {
+  display: table;
+  content: '';
+  clear: both;
+}
