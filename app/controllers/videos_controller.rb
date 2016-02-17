@@ -10,12 +10,11 @@ class VideosController < ApplicationController
   def show
     @sub_req = boolean_string(params['sub_req'])
 
-    @access_token = session['access_token']
-
-    if @sub_req && @access_token.blank?
+    if @sub_req && invalid_access_token
       @display_sign_in = 'visible'
       session['zype_id'] = params['zype_id']
     else
+      @access_token = session['access_token']
       @display_sign_in = 'hidden'
     end
 
@@ -26,5 +25,9 @@ class VideosController < ApplicationController
 
   def boolean_string(string)
     ActiveRecord::Type::Boolean.new.type_cast_from_user(string)
+  end
+
+  def invalid_access_token
+    session['access_token'].blank? || Time.now - 60 > session['expires_in']
   end
 end
