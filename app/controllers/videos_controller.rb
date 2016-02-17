@@ -1,7 +1,10 @@
 class VideosController < ApplicationController
   def index
+    #pagination
+    params[:page].blank? ? @page = 1 : @page = params[:page].to_i
+
     session.delete(:zype_id)
-    @videos = VideoService.get_videos params[:page]
+    @videos = VideoService.get_videos @page
   end
 
   def show
