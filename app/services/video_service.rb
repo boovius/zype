@@ -1,7 +1,7 @@
 class VideoService
   class << self
-    def get_videos
-      response = VideosResponse.new Faraday.get url, params
+    def get_videos(page)
+      response = VideosResponse.new Faraday.get url, params(page)
       response.data
     end
 
@@ -11,12 +11,14 @@ class VideoService
       'https://api.zype.com/videos'
     end
 
-    def params
+    def params(page)
+      page = 1 if page.blank?
       {
         app_key: ENV['ZYPE_API_KEY'],
         sort: 'published_at',
         order: 'desc',
         per_page: '20',
+        page: page
       }
     end
   end
