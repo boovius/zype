@@ -1,0 +1,7 @@
+.pagination-controls.clearfix
+  - if @page != 1
+    .prev(style='float:left')
+      %a(href="/videos/#{@page-1}") << previous
+  .next(style='float:right')
+    %a(href="/videos/#{@page+1}") next >>
+
