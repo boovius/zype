@@ -1,7 +1,9 @@
 require 'vcr_helper'
 
 RSpec.describe VideoService, :vcr do
-  subject { described_class.get_videos }
+  subject { described_class.get_videos 1 }
+
+  let(:page_token) { 1 }
 
   describe 'get_videos' do
     it 'gets videos from zype api' do
