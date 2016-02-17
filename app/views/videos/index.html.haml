@@ -1,4 +1,5 @@
 .container
+  =render partial: 'pagination_controls'
   .videos
     -@videos.each do |video|
       %a(href="/videos/#{video.zype_id}/#{video.sub_req}")
@@ -13,3 +14,4 @@
           .caption-overlay
             .video-description
               =video.description
+  =render partial: 'pagination_controls'
