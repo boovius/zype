@@ -1,5 +1,6 @@
 class VideosController < ApplicationController
   def index
+    session.delete(:zype_id)
     @videos = VideoService.get_videos
   end
 
