@@ -12,6 +12,10 @@
         %a.btn(href='/')
           %img(src='http://dev.zype.com/assets/logo.png')
       .login
-        %a.btn(href='/login')
-          login!
+        - if current_user.blank?
+          %a.btn(href='/login')
+            Login
+        - else
+          %a.btn(href='/logout')
+            Logout: #{current_user}
     = yield
