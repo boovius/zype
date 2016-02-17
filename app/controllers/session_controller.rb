@@ -14,13 +14,15 @@ class SessionController < ApplicationController
     else
       redirect_to '/login'
     end
-    # take params
-    # send to zype api
-      #if valid
-        # get access token
-        # store access_token in session
-    # else
-        # display login error message to user
+  end
+
+  def destroy
+    session.delete(:username)
+    session.delete(:access_token)
+    session.delete(:expires_in)
+    session.delete(:zype_id)
+
+    redirect_to '/'
   end
 
   private
