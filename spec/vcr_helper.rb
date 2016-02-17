@@ -1,5 +1,6 @@
 require 'rails_helper'
 require 'vcr'
+require 'dotenv'
 
 VCR.configure do |c|
   c.before_record do |i|
@@ -19,3 +20,5 @@ VCR.configure do |config|
     config.filter_sensitive_data("<#{env_var}>") { ENV[env_var] }
   end
 end
+
+Dotenv.load "spec/test.env"
