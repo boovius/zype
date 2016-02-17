@@ -12,6 +12,8 @@ gem 'faraday'
 gem 'reverb'
 gem 'toastr-rails'
 
+gem 'rails_12factor', group: :production
+
 group :development, :test do
   gem 'dotenv-rails'
   gem 'byebug'
