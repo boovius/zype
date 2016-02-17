@@ -9,8 +9,10 @@ class VideosController < ApplicationController
     @access_token = session['access_token']
 
     if @sub_req && @access_token.empty?
-      @sign_in_required = true
+      @display_sign_in = 'visible'
       session['zype_id'] = params['zype_id']
+    else
+      @display_sign_in = 'hidden'
     end
 
     @zype_id = params['zype_id']
