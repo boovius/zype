@@ -1,8 +1,7 @@
 class VideoService
   class << self
     def get_videos(page)
-      response = VideosResponse.new Faraday.get url, params(page)
-      response.data
+      VideosResponse.new Faraday.get url, params(page)
     end
 
     private
