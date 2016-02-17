@@ -1,5 +1,6 @@
 class VideosController < ApplicationController
   def index
+    session.delete(:zype_id)
     @videos = VideoService.get_videos
   end
 
@@ -8,7 +9,7 @@ class VideosController < ApplicationController
 
     @access_token = session['access_token']
 
-    if @sub_req && @access_token.empty?
+    if @sub_req && @access_token.blank?
       @display_sign_in = 'visible'
       session['zype_id'] = params['zype_id']
     else

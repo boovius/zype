@@ -4,7 +4,9 @@ class SessionController < ApplicationController
 
   def create
     response = AuthService.get_access_token (token_parameters)
+
     if response.success?
+      session['username'] = params['username']
       session['access_token'] = response.data[:access_token]
       session['expires_in'] = response.data[:expires_in]
 
@@ -12,13 +14,15 @@ class SessionController < ApplicationController
     else
       redirect_to '/login'
     end
-    # take params
-    # send to zype api
-      #if valid
-        # get access token
-        # store access_token in session
-    # else
-        # display login error message to user
+  end
+
+  def destroy
+    session.delete(:username)
+    session.delete(:access_token)
+    session.delete(:expires_in)
+    session.delete(:zype_id)
+
+    redirect_to '/'
   end
 
   private

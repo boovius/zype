@@ -1,0 +1,13 @@
+nav {
+  box-shadow: 0 2px 10px $green-juice;
+
+  .home {
+    float: left;
+  }
+
+  .login {
+    float: right;
+    font-size: 1.6em;
+    border-left: 1px solid #eee;
+  }
+}
