@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://login.zype.com/oauth/token?client_id=<ZYPE_CLIENT_ID>&client_secret=<ZYPE_CLIENT_SECRET>&grant_type=password&password=password&username=test@test.com
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 17 Feb 2016 01:38:37 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - nginx/1.4.6 (Ubuntu)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - f7ff0e86-b20d-4514-81fc-767a8c6fcaf4
+      X-Runtime:
+      - '0.107471'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '196'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"access_token":"e5a671998b140e839db6cc1dc1f1f85447c719ebb515969eb20573f838e039d0","token_type":"bearer","expires_in":604800,"refresh_token":"22aefee20a2ff384d5ea96b07f0091e37e1b950de09b9d64ac04aebeeb74376d","scope":"consumer","created_at":1455673117}'
+    http_version: 
+  recorded_at: Wed, 17 Feb 2016 01:38:37 GMT
+recorded_with: VCR 3.0.1
